@@ -15,3 +15,10 @@ class Attendee(models.Model):
     _sql_constraints = [
         ('partner_session_unik','UNIQUE(session_id,partner_id)','Multiple Attendee Detected')
     ]
+
+    course_id=fields.Many2one(
+        comodel_name="academic.course",
+        string="Course",
+        related="session_id.course_id",
+        store=True
+    )

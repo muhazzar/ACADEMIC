@@ -3,7 +3,7 @@ from odoo import api, fields, models, _
 class Course(models.Model):
     _name = 'academic.course'
     
-    name = fields.Char('name')
+    name = fields.Char('Name')
     description = fields.Text(string="Description", required=True)
     responsible_id = fields.Many2one(
         comodel_name="res.users",
