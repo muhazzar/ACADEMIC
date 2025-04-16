@@ -79,7 +79,7 @@
         sequence="40"/>
 
     <menuitem id="menu_academic_instruktur"
-        name="Instruktur"
+        name="Instructor"
         parent="academic_1"
         action="action_instruktur_list"
         sequence="50"/>
